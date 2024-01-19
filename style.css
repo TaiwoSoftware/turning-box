@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateReverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 1, 29);
+}
+
+main {
+    font-family: sans-serif;
+    padding: 3rem 1rem;
+    color: rgb(191, 191, 191);
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+
+.boxContainer {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+header .box{
+    background-color: red;
+    padding: 2rem ;
+    width: 50%;
+    height: 120%;
+    border-radius: 2rem;
+    transform: skewX(3deg);
+    box-shadow: 3px 3px 4rem rgb(10, 10, 51), inset 3px 3px 2rem rgb(2, 8, 30);
+    /* transform: rotate(14deg); */
+    animation: rotate 10s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 5rem  auto;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    margin-left:  auto;
+    margin-top: 13rem;
+    margin-right: auto;
+    font-size: 3rem;
+}
+
+.body{
+    margin-top: 25rem;
+    display: block;
+}
+
+.body h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: gray;
+    
+}
+
+.batchOne, .batchTwo, .batchThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.batchTwo{
+    margin-top: 10rem;
+}
+
+.batchThree {
+    margin-top: 10rem;
+}
+
+.firstbatch {
+    background-color: red;
+    padding: 2rem ;
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    /* transform: skewX(3deg); */
+    box-shadow: 3px 3px 4rem rgb(10, 10, 51), inset 3px 3px 2rem rgb(2, 8, 30);
+    animation: rotate 10s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 5rem  auto;
+    box-sizing: border-box;
+}
+
+.twoBatch {
+    background-color: yellow;
+    padding: 2rem ;
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    /* transform: skewX(3deg); */
+    box-shadow: 3px 3px 4rem rgb(10, 10, 51), inset 3px 3px 2rem rgb(2, 8, 30);
+    animation: rotateReverse 10s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 5rem  auto;
+    box-sizing: border-box;
+}
+
+.threeBatch {
+    background-color: green;
+    padding: 2rem ;
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    /* transform: skewX(3deg); */
+    box-shadow: 3px 3px 4rem rgb(10, 10, 51), inset 3px 3px 2rem rgb(2, 8, 30);
+    animation: rotate 10s;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 5rem  auto;
+    box-sizing: border-box;
+}
